@@ -1,10 +1,20 @@
+:root {
+  --primary-color: #fff;
+  --text-color: #000;
+  --background-color: crimson;
+  --btn-color: blueviolet;
+}
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  background: #101010;
+  color: var(--text-color);
+  background: var(--btn-color);
+  font-size: 18px;
 }
 .container {
-  background-color: #333;
+  background-color: var(--primary-color);
   width: 90%;
   max-width: 960px;
   margin: 20px auto;
@@ -33,34 +43,44 @@ h3 {
   text-align: center;
 }
 section h2 {
-  margin-top: 40px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+#section-4 {
+  margin-bottom: 40px;
 }
 ol {
   padding: 0;
-  margin-left: 50px;
+  margin: auto;
+  width: 90%;
 }
 li {
+  width: 90%;
+  margin: auto;
   padding: 12px;
   border-bottom: 2px solid gray;
   cursor: pointer;
 }
 li:hover {
-  background-color: white;
+  background-color: #f0f0f0;
   color: black;
   border-bottom: 2px solid black;
 }
 
 #submit {
   display: none;
-  background-color: darkslateblue;
+  background-color: var(--btn-color);
   color: white;
-  transform: translateX(150%);
   font-size: 30px;
-  border: 1px solid darkslateblue;
+  border: 1px solid var(--btn-color);
   border-radius: 6px;
+  text-align: center;
+  padding: 10px;
+  margin: 15px auto;
 }
 #submit:hover {
-  background-color: #333;
+  background-color: darkslateblue;
 }
 .modal {
   display: none;
@@ -74,8 +94,8 @@ li:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 #result {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   text-align: center;
   margin: 10% auto;
   width: 350px;

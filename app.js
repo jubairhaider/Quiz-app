@@ -97,7 +97,7 @@ function showmodal(e) {
     result.innerHTML = `<h1 style='color:limegreen'>Great!</h2>
     <p>Your Score is : ${score} out of 4</p>`;
   } else if (score >= 1) {
-    result.innerHTML = `<h1 style='color:white'>Good</h2>
+    result.innerHTML = `<h1 style='color:black'>Good</h2>
     <p>Your Score is : ${score} out of 4</p>`;
   } else {
     result.innerHTML = `<h1 style='color:red'>Oops! Better luck next time!</h2>
