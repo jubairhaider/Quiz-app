@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background: #101010;
+}
+.container {
+  background-color: #333;
+  width: 90%;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 0 20px;
+  border: 1px solid black;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 16px;
+  position: relative;
+}
+#page-banner {
+  background-color: black;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+#page-banner h1 {
+  color: white;
+  width: 100%;
+}
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  text-align: center;
+}
+section h2 {
+  margin-top: 40px;
+}
+ol {
+  padding: 0;
+  margin-left: 50px;
+}
+li {
+  padding: 12px;
+  border-bottom: 2px solid gray;
+  cursor: pointer;
+}
+li:hover {
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+#submit {
+  display: none;
+  background-color: darkslateblue;
+  color: white;
+  transform: translateX(150%);
+  font-size: 30px;
+  border: 1px solid darkslateblue;
+  border-radius: 6px;
+}
+#submit:hover {
+  background-color: #333;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+#result {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  margin: 10% auto;
+  width: 350px;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+#result h1 {
+  margin-bottom: 1rem;
+}
+#result p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
